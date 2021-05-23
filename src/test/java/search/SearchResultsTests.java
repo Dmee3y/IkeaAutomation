@@ -16,10 +16,10 @@ public class SearchResultsTests extends BaseTest {
 //
 //    }
 
-    @Test
-    public void testSearchSurvey() {
-        SearchResultsPage searchResultsPage = homePage.searchProduct("диван");
-
-        assertTrue(searchResultsPage.surveyTextCheck().contains("диван"));
-    }
+//    @Test
+//    public void testSearchSurvey() {
+//        SearchResultsPage searchResultsPage = homePage.searchProduct("диван");
+//
+//        assertTrue(searchResultsPage.surveyTextCheck().contains("диван"));
+//    }
 }
