@@ -6,32 +6,32 @@ import java.util.Set;
 
 public class WindowManager {
 
-    private WebDriver driver;
-    private WebDriver.Navigation navigate;
+    private static WebDriver driver;
+    private static WebDriver.Navigation navigate;
 
     public WindowManager(WebDriver driver) {
         this.driver = driver;
         navigate = driver.navigate();
     }
 
-    public void goBack() {
+    public static void goBack() {
 
         navigate.back();
     }
 
-    public void goForward() {
+    public static void goForward() {
         navigate.forward();
     }
 
-    public void refresh() {
+    public static void refresh() {
         navigate.refresh();
     }
 
-    public void goTo(String url) {
+    public static void goTo(String url) {
         navigate.to(url);
     }
 
-    public void switchToTab(String tabTitle) {
+    public static void switchToTab(String tabTitle) {
         Set<String> windows = driver.getWindowHandles();
 
         System.out.println("Number of tabs: " + windows.size());
