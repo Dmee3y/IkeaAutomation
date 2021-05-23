@@ -20,19 +20,6 @@ public class SearchResultsPage {
         this.driver = driver;
     }
 
-
-//    public String surveyTextCheck() {
-//        WebElement searchSurveyText = driver.findElement(By.xpath("//section/fieldset/legend"));
-//
-//        //JavascriptExecutor js = (JavascriptExecutor) driver;
-//        WebDriverWait wait = new WebDriverWait(driver, 10);
-//        wait.until(ExpectedConditions.visibilityOf(searchSurveyText));
-//        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//        //js.executeScript("arguments[0].scrollIntoView();", searchSurveyText);
-//        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//        return searchSurveyText.getText();
-//    }
-
     public ProductPage goToFirstResultPage() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement firstResult = wait.until(ExpectedConditions.elementToBeClickable(firstSearchResult));
