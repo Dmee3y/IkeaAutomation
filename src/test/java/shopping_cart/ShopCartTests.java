@@ -1,13 +1,11 @@
 package shopping_cart;
 
 import base.BaseTest;
-import org.openqa.selenium.WebDriver;
+
 import static org.testng.Assert.*;
 
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import pages.ProductPage;
-import pages.ShoppingCart;
 
 public class ShopCartTests extends BaseTest {
 
@@ -22,8 +20,6 @@ public class ShopCartTests extends BaseTest {
         ShoppingCart shoppingCart = productPage.goToShoppingCart();
 
         assertEquals(shoppingCart.getShopCartItemName(), itemName, "Wrong item name");
-
-        //homePage.clearShoppingCart();
     }
 
     @Test(dependsOnMethods = {"testItemAdded"})
